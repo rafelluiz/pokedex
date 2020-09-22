@@ -6,7 +6,7 @@ import {Title, ListPokemon} from './styles'
 
 const Pokedex = () => {
   const offSet = 0;
-  const limit = 500;
+  let limit = 2000;
 
   const sourceImageBig = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/";
 
@@ -20,9 +20,9 @@ const Pokedex = () => {
       });
   },[offSet, limit]);
 
-  listPokemon.map(pokemon =>(
-    console.log(pokemon)
-  ));
+
+
+
 
 
 
