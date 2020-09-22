@@ -6,11 +6,11 @@ import {Title, ListPokemon} from './styles'
 
 const Pokedex = () => {
   const offSet = 0;
-  const limit = 10;
+  const limit = 500;
 
   const sourceImageBig = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/";
 
-  const [ listPokemon, setPokemon ] = useState([])
+  const [ listPokemon, setPokemon ] = useState([]);
 
   useEffect(() => {
     api.get(`?offset=${offSet}&limit=${limit}`)
@@ -22,7 +22,7 @@ const Pokedex = () => {
 
   listPokemon.map(pokemon =>(
     console.log(pokemon)
-  ))
+  ));
 
 
 
